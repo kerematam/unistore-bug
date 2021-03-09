@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "env"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "h"
+      }
+    ],
+    [
+      "@emotion/babel-plugin-jsx-pragmatic",
+      {
+        "module": "preact",
+        "import": "h",
+        "export": "h"
+      }
+    ]
+  ],
+  "parserOpts": {
+    "plugins": [
+      "dynamicImport"
+    ]
+  }
+}
